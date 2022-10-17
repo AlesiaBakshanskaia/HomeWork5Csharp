@@ -17,23 +17,23 @@ int CountEven (int[] array){
 */
 
 // Задача 36: Задайте одномерный массив, заполненный случайными числами. Найдите сумму элементов, стоящих на нечётных позициях.
-/*
+
 int[] Array36 = GetArray(9, -100, 100);
 Console.WriteLine(String.Join(" ", Array36));
-Console.WriteLine($"Сумма чисел на нечетных позициях в массиве {SumEvenPosition(Array36)}");
+Console.WriteLine($"Сумма чисел на нечетных позициях в массиве {SumNotEvenPosition(Array36)}");
 
 //Метод поиска суммы элементов на нечетных позициях массива
-int SumEvenPosition (int[] array){
+int SumNotEvenPosition (int[] array){
     int sum = 0;
     for (int i = 1; i < array.Length; i+=2){
         sum += array[i];
     }
     return sum;    
     }
-*/
+
 
 //Метод поиска суммы элементов на нечетных позициях массива. 2 вариант
-/*int SumEvenPosition (int[] array){
+/*int SumNotEvenPosition (int[] array){
     int sum = 0;
     for (int i = 0; i < array.Length; i++){
         if (i % 2 != 0){
@@ -45,7 +45,7 @@ int SumEvenPosition (int[] array){
 
 
 // Задача 38: Задайте массив вещественных чисел(просто от минус бесконечности, до плюс бесконечности, с дробными не работаем). Найдите разницу между максимальным и минимальным элементом массива.
-
+/*
 int[] Array38 = GetArray(9, -100, 100);
 Console.WriteLine(String.Join(" ", Array38));
 Console.WriteLine($"Разница между максимальным {MaxElement(Array38)} и минимальным {MinElement(Array38)} элементами массива {MaxElement(Array38) - MinElement(Array38)}");
@@ -71,7 +71,7 @@ int MinElement (int[] array){
     }
     return minel;    
 }
-
+*/
 
 
 
